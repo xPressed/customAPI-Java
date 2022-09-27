@@ -11,4 +11,8 @@ public interface ContactRepository extends JpaRepository<Contact, Integer> {
     List<Contact> findByContactName(String contactName);
     List<Contact> findByContactNumber(String contactNumber);
     List<Contact> findByContactNameAndContactNumber(String contactName, String contactNumber);
+
+    void deleteByContactName(String contactName);
+    void deleteByContactNumber(String contactNumber);
+    void deleteByContactNameAndContactNumber(String contactName, String contactNumber);
 }

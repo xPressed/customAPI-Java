@@ -6,7 +6,6 @@ plugins {
 
 group = 'ru.xpressed'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
@@ -31,6 +30,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
     runtimeOnly 'org.postgresql:postgresql'
+    implementation('org.springdoc:springdoc-openapi-ui:1.6.11')
 }
 
 tasks.named('test') {
